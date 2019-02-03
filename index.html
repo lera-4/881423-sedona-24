@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main class="container">
-        <h1 class="visuality-hidden">Sedona</h1>
+        <h1 class="visually-hidden">Sedona</h1>
         <div class="Welcome-img">
             <img src="img/sedona.svg" width="459" height="353" alt="Welcome to the gorgeous! Sedona. Because the Grand Canyon sucks!">
         </div>
@@ -76,10 +76,31 @@
             </ol>
         </section>
         <section class="main-booking">
-            <h2>Заинтересовались?</h2>
+            <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <img src="img/map.jpg" width="1200" height="593" alt="Карта Sedona">
-            <!--Здесь будет форма-->
+            <div class="main-booking-form">
+                <h2>Поиск гостиницы в Седоне</h2>
+                <form action="https://echo.htmlacademy.ru" metod="post">
+                    <p class="date-arrival">
+                        <label for="date-arrival">Дата заезда:</label>
+                        <input id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+                    </p>
+                    <p class="date-departure">
+                        <label for="date-departure">Дата выезда:</label>
+                        <input id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+                    </p>
+                    <p class="booking-adults">
+                        <label for="booking-adults">Взрослые:</label>
+                        <input type="number" min="1" max="" name="booking-adults" placeholder="2">
+                    </p>
+                    <p class="booking-kids">
+                        <label for="booking-kids">Дети:</label>
+                        <input type="number" min="0" max="" name="booking-kids" placeholder="0">
+                    </p>
+                    <button class="button" type="submit">Найти</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="main-footer">
@@ -101,9 +122,10 @@
         <p class="footer-copyright">
             <b>Website by</b>
             <a class="footer-img-link" title="Профессиональный онлайн‑курс HTML и CSS, уровень 1" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy"> 
+                <img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
             </a>
         </p>
     </footer>
 </body>
+
 </html>
