@@ -80,23 +80,29 @@
             <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <img src="img/map.jpg" width="1200" height="593" alt="Карта Sedona">
             <div class="main-booking-form">
-                <h2>Поиск гостиницы в Седоне</h2>
+                <button type="button" class="button button-open-form">Поиск гостиницы в Седоне</button>
                 <form action="https://echo.htmlacademy.ru" metod="post">
                     <p class="date-arrival">
                         <label for="date-arrival">Дата заезда:</label>
                         <input id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+                        <button type="button" class="button-calendar" aria-label="Открыть календарь для выбора даты заезда"></button>
                     </p>
                     <p class="date-departure">
                         <label for="date-departure">Дата выезда:</label>
                         <input id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+                        <button type="button" class="button-calendar" aria-label="Открыть календарь для выбора даты выезда"></button>
                     </p>
                     <p class="booking-adults">
                         <label for="booking-adults">Взрослые:</label>
                         <input type="number" min="1" max="" name="booking-adults" placeholder="2">
+                        <button type="button" class="button-minus" aria-label="Уменьшить количество проживающих взрослых">-</button>
+                        <button type="button" class="button-plus" aria-label="Увеличить количество проживающих взрослых">+</button>
                     </p>
                     <p class="booking-kids">
                         <label for="booking-kids">Дети:</label>
                         <input type="number" min="0" max="" name="booking-kids" placeholder="0">
+                        <button type="button" class="button-minus" aria-label="Уменьшить количество проживающих детей">-</button>
+                        <button type="button" class="button-plus" aria-label="Увеличить количество проживающих детей">+</button>
                     </p>
                     <button class="button" type="submit">Найти</button>
                 </form>
@@ -104,17 +110,17 @@
         </section>
     </main>
     <footer class="main-footer">
-        <a class="footer-link" href="#" title="Посмотреть информацию по хештегу">#visitSEDONA</a>
+        <a class="footer-link" href="#" title="Посмотреть информацию по хештегу" aria-label="Посмотреть информацию по хештегу visitSEDONA">#visitSEDONA</a>
         <div class="footer-social">
             <ul>
                 <li>
-                    <a class="social-button" title="Наш аккаунт в Twitter" href="#">Twitter</a>
+                    <a class="social-button" title="Наш аккаунт в Twitter" href="#" aria-label="Наш аккаунт в Twitter">Twitter</a>
                 </li>
                 <li>
-                    <a class="social-button" title="Наша страница в facebook" href="#">Facebook</a>
+                    <a class="social-button" title="Наша страница в facebook" href="#" aria-label="Наша страница в facebook">Facebook</a>
                 </li>
                 <li>
-                    <a class="social-button" title="Наш канал на YouTube" href="#">YouTube</a>
+                    <a class="social-button" title="Наш канал на YouTube" href="#" aria-label="Наш канал на YouTube">YouTube</a>
                 </li>
             </ul>
 
