@@ -30,7 +30,36 @@
     </header>
     <main class="container">
         <h1 class="visually-hidden">Выбрать отель в Sedona</h1>
-        <!--Здесь будет форма-->
+        <form action="https://echo.htmlacademy.ru" metod="post">
+            <fieldset>
+                <legend>Инфраструктура:</legend>
+                <label for="pool">Бассейн</label>
+                <input type="checkbox" id="pool" name="pool" value="pool" checked>
+                <label for="parking">Парковка</label>
+                <input type="checkbox" id="parking" name="parking" value="parking">
+                <label for="wifi">Wi-Fi</label>
+                <input type="checkbox" id="wifi" name="wifi" value="wifi">
+            </fieldset>
+            <fieldset>
+                <legend>Тип жилья:</legend>
+                <label for="hotel">Гостиница</label>
+                <input type="checkbox" id="hotel" name="hotel" value="hotel" checked>
+                <label for="motel">Мотель</label>
+                <input type="checkbox" id="motel" name="motel" value="motel" checked>
+                <label for="apartment">Апартаменты</label>
+                <input type="checkbox" id="apartment" name="apartment" value="apartment" checked>
+            </fieldset>
+            <fieldset>
+                <legend>Стоимость в сутки (р):</legend>
+                <label for="price-from">от</label>
+                <input type="text" id="price-from" name="price-from" value="0">
+                <label for="price-to">до</label>
+                <input type="text" id="price-to" name="price-to" value="3000"> 
+                <br>
+                <!--Здесь будет ползунок-->
+                <button class="button" type="submit">Показать</button>
+            </fieldset>
+            </form>
         <p class="search-result">Найдено:3</p>
         <p class="result-sorting">Сортировка:</p>
         <ul class="sorting">
