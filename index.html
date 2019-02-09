@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -25,13 +29,14 @@
         <div class="Welcome-img">
             <img src="img/sedona.svg" width="459" height="353" alt="Welcome to the gorgeous! Sedona. Because the Grand Canyon sucks!">
         </div>
+        <div class="polygon"></div>
         <section class="main-features">
             <b>Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</b>
             <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
             <ol>
                 <li class="main-features-list">
                     <h3>Настоящий <br> городок</h3>
-                    <b>— №1 —</b>
+                    <b class="list-number">— №1 —</b>
                     <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                     <img src="img/photo1.jpg" width="800" height="256" alt="Фото Sedona">
                     <ul>
@@ -54,23 +59,23 @@
                 </li>
                 <li class="main-features-list">
                     <h3>Там есть <br> мост дьявола</h3>
-                    <b>— №2 —</b>
+                    <b class="list-number">— №2 —</b>
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     <img src="img/photo2.jpg" width="800" height="256" alt="Фото мост дьявола">
                 </li>
                 <li class="main-features-list">
                     <h3>Небольшая <br> площадь</h3>
-                    <b>— №3 —</b>
+                    <b class="list-number-black">— №3 —</b>
                     <p>Все достопримечательности находятся очень близко</p>
                 </li>
                 <li class="main-features-list">
                     <h3>Красивая <br> дорога</h3>
-                    <b>— №4 —</b>
+                    <b class="list-number-black">— №4 —</b>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="main-features-list">
                     <h3>Мало <br> туристов</h3>
-                    <b>— №5 —</b>
+                    <b class="list-number-black">— №5 —</b>
                     <p>Большинство едет в гранд каньон и толпится там</p>
                 </li>
             </ol>
@@ -84,27 +89,27 @@
                 <form action="https://echo.htmlacademy.ru" metod="post">
                     <p class="date-arrival">
                         <label for="date-arrival">Дата заезда:</label>
-                        <input id="date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+                        <input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2017" placeholder="24 апреля 2017">
                         <button type="button" class="button-calendar" aria-label="Открыть календарь для выбора даты заезда"></button>
                     </p>
                     <p class="date-departure">
                         <label for="date-departure">Дата выезда:</label>
-                        <input id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+                        <input id="date-departure" type="text" name="date-departure" value="4 июля 2017" placeholder="4 июля 2017">
                         <button type="button" class="button-calendar" aria-label="Открыть календарь для выбора даты выезда"></button>
                     </p>
                     <p class="booking-adults">
                         <label for="booking-adults">Взрослые:</label>
                         <button type="button" class="button-minus" aria-label="Уменьшить количество проживающих взрослых">-</button>
-                        <input type="text" min="1" max="" name="booking-adults" placeholder="2">
+                        <input type="text" min="1" max="" name="booking-adults" value="2" placeholder="2">
                         <button type="button" class="button-plus" aria-label="Увеличить количество проживающих взрослых">+</button>
                     </p>
                     <p class="booking-kids">
                         <label for="booking-kids">Дети:</label>
                         <button type="button" class="button-minus" aria-label="Уменьшить количество проживающих детей">-</button>
-                        <input type="text" min="0" max="" name="booking-kids" placeholder="0">
+                        <input type="text" min="0" max="" name="booking-kids" value="0" placeholder="0">
                         <button type="button" class="button-plus" aria-label="Увеличить количество проживающих детей">+</button>
                     </p>
-                    <button class="button" type="submit">Найти</button>
+                    <button class="button button-search" type="submit">Найти</button>
                 </form>
             </div>
         </section>

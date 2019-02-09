@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона-отели</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -51,12 +54,21 @@
             </fieldset>
             <fieldset>
                 <legend>Стоимость в сутки (р):</legend>
-                <label for="price-from">от</label>
-                <input type="text" id="price-from" name="price-from" value="0">
-                <label for="price-to">до</label>
-                <input type="text" id="price-to" name="price-to" value="3000"> 
-                <br>
-                <!--Здесь будет ползунок-->
+                <div class="filter">
+                        <div class="filter-interval">
+                                <label>От<input type="text" name="min-interval" value="0"></label>
+                                <label>До<input type="text" name="max-interval" value="3000"></label>
+                              </div>
+                    <div class="filter-range-wrapper">
+                      <div class="filter-range">
+                        <div class="filter-range-scale">
+                          <div class="filter-range-bar"></div>
+                        </div>
+                        <button class="filter-range-handle min"></button>
+                        <button class="filter-range-handle max"></button>
+                      </div>
+                    </div>
+                  </div>
                 <button class="button" type="submit">Показать</button>
             </fieldset>
             </form>
