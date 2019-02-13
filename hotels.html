@@ -33,7 +33,7 @@
     </header>
     <main class="container">
         <h1 class="visually-hidden">Выбрать отель в Sedona</h1>
-        <form action="https://echo.htmlacademy.ru" metod="post">
+        <form action="https://echo.htmlacademy.ru" metod="post" class="choice-hotel">
             <fieldset>
                 <legend>Инфраструктура:</legend>
                 <label for="pool">Бассейн</label>
@@ -64,12 +64,12 @@
                         <div class="filter-range-scale">
                           <div class="filter-range-bar"></div>
                         </div>
-                        <button class="filter-range-handle min"></button>
-                        <button class="filter-range-handle max"></button>
+                        <button type="button" class="filter-range-handle min"></button>
+                        <button type="button" class="filter-range-handle max"></button>
                       </div>
                     </div>
                   </div>
-                <button class="button" type="submit">Показать</button>
+                <button class="button button-show" type="submit">Показать</button>
             </fieldset>
             </form>
         <p class="search-result">Найдено:3</p>
@@ -85,13 +85,13 @@
                 <a class="sorting-parameter" href="#" title="Сортировать по рейтингу">По рейтингу</a>
             </li>
         </ul>
-        <ul>
+        <ul class="sorting-direction">
             <li>
-                <a class="sorting-direction sorting-direction-up" href="#" title="Сортировка от меньшего к большему">Сортировка
+                <a class="sorting-direction-up" href="#" title="Сортировка от меньшего к большему">Сортировка
                     от меньшего к большему</a>
                 </li>
             <li>
-                <a class="sorting-direction sorting-direction-down" href="#" title="Сортировка от большего к меньшему">Сортировка
+                <a class="sorting-direction-down" href="#" title="Сортировка от большего к меньшему">Сортировка
                     от большего к меньшему</a>
                 </li>
         </ul>
