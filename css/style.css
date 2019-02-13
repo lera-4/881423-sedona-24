@@ -492,8 +492,10 @@ color: #766357;
   height: 27px;
   font-size: 14px;
   line-height: 21px;
-  display: inline-block;
+  display: block;
   vertical-align: middle;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .button-details:hover {
   background-color: #669ec0;
@@ -508,8 +510,10 @@ color: #766357;
   height: 27px;
   font-size: 14px;
   line-height: 21px;
-  display: inline-block;
+  display: block;
   vertical-align: middle;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .button-booking:hover {
   background-color: #604e43;
