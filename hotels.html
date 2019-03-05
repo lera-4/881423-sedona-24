@@ -31,7 +31,7 @@
             <!--Здесь будет форма-->
             <form action="https://echo.htmlacademy.ru" method="post" class="form-choice-hotel">
                 <fieldset>
-                    <legend>Инфраструктура:</legend>
+                    <legend class="checkbox-title">Инфраструктура:</legend>
                     <div class="checkboxes infrastructure">
                         <label for="pool" class="checkbox">
                             <input class="visually-hidden" type="checkbox" id="pool" name="pool" value="pool" checked>
@@ -52,7 +52,7 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Тип жилья:</legend>
+                    <legend class="checkbox-title">Тип жилья:</legend>
                     <div class="checkboxes housing-type">
                         <label for="hotel" class="checkbox">
                             <input class="visually-hidden" type="checkbox" id="hotel" name="hotel" value="hotel"
@@ -95,25 +95,6 @@
                     </div>
 
 
-                    <!--
-                    <div class="filter">
-                        <div class="filter-interval">
-                            <label>От <input type="text" name="min-interval" value="0"></label>
-                            <label>До <input type="text" name="max-interval" value="3000"></label>
-                        </div>
-
-                        <div class="filter-range-wrapper">
-                            <div class="filter-range">
-                                <div class="filter-range-scale">
-                                    <div class="filter-range-bar"></div>
-                                </div>
-                                <button type="button" class="filter-range-handle min"></button>
-                                <button type="button" class="filter-range-handle max"></button>
-                            </div>
-                        </div>
-                        <button class="button button-show" type="submit">Показать</button>
-                    </div>
--->
                 </fieldset>
             </form>
             <div class="sorting-block">
@@ -122,13 +103,13 @@
                     <p class="result-sorting">Сортировка</p>
                     <ul class="sorting">
                         <li>
-                            <a class="sorting-parameter" href="#" title="Сортировать по цене">По цене</a>
+                            <a class="sorting-price" href="#" title="Сортировать по цене">По цене</a>
                         </li>
                         <li>
-                            <a class="sorting-parameter" href="#" title="Сортировать по типу">По типу</a>
+                            <a class="sorting-type" href="#" title="Сортировать по типу">По типу</a>
                         </li>
                         <li>
-                            <a class="sorting-parameter" href="#" title="Сортировать по рейтингу">По рейтингу</a>
+                            <a class="sorting-rate" href="#" title="Сортировать по рейтингу">По рейтингу</a>
                         </li>
                     </ul>
                 </div>
@@ -279,11 +260,11 @@
                 <a class="footer-link" title="посмотреть информацию по хештегу" href="#">#visitSEDONA</a>
             </div>
             <ul class="footer-social">
-                <li><a class="social-button" title="Наш аккаунт в twitter" href="#"
+                <li><a class="social-button twitter" title="Наш аккаунт в twitter" href="#"
                         aria-label="Наш аккаунт в twitter"></a></li>
-                <li><a class="social-button" title="Наша страница в facebook" href="#"
+                <li><a class="social-button facebook" title="Наша страница в facebook" href="#"
                         aria-label="Наша страница в facebook"></a></li>
-                <li><a class="social-button" title="Наш канал на YouTube" href="#"
+                <li><a class="social-button youtube" title="Наш канал на YouTube" href="#"
                         aria-label="Наш канал на YouTube"></a></li>
             </ul>
 
