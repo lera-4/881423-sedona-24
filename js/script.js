@@ -1,6 +1,5 @@
 var link = document.querySelector(".button-open-form");
 var popup = document.querySelector(".main-booking-form");
-var spareLink = document.querySelector(".spare-link");
 var dateArrival = popup.querySelector("[name=date-arrival]");
 var dateDeparture = popup.querySelector("[name=date-departure]");
 var bookingAdults = popup.querySelector("[name=booking-adults]");
@@ -36,7 +35,7 @@ link.addEventListener("click", function (evt) {
     bookingKids.classList.remove("input-error");
 });
 
-spareLink.addEventListener("keydown", function (evt) {
+link.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 13) {
         evt.preventDefault();
         popup.classList.toggle("booking-form-show");
@@ -53,7 +52,7 @@ spareLink.addEventListener("keydown", function (evt) {
         bookingAdults.classList.remove("input-error");
         bookingKids.classList.remove("input-error");
     }
-    });
+});
 
 popup.addEventListener("submit", function (evt) {
     if (!dateArrival.value || !dateDeparture.value || !bookingAdults.value || !bookingKids.value) {
