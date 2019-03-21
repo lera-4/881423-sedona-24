@@ -4,20 +4,16 @@ var dateArrival = popup.querySelector("[name=date-arrival]");
 var dateDeparture = popup.querySelector("[name=date-departure]");
 var bookingAdults = popup.querySelector("[name=booking-adults]");
 var bookingKids = popup.querySelector("[name=booking-kids]");
-var imageMap = document.querySelector(".image-map");
-var iframeMap = document.querySelector(".iframe-map");
 var isStorageSupport = true;
 var storageAdults = "";
 var storageKids = "";
-
-
 try {
     storage = localStorage.getItem("bookingAdults");
     storage = localStorage.getItem("bookingKids");
 } catch (err) {
     isStorageSupport = false;
 }
-
+popup.classList.remove("booking-form-show");
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("booking-form-show");
@@ -33,8 +29,8 @@ link.addEventListener("click", function (evt) {
     dateDeparture.classList.remove("input-error");
     bookingAdults.classList.remove("input-error");
     bookingKids.classList.remove("input-error");
+    popup.classList.remove("form-error");
 });
-
 link.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 13) {
         evt.preventDefault();
@@ -51,12 +47,15 @@ link.addEventListener("keydown", function (evt) {
         dateDeparture.classList.remove("input-error");
         bookingAdults.classList.remove("input-error");
         bookingKids.classList.remove("input-error");
+        popup.classList.remove("form-error");
     }
 });
-
 popup.addEventListener("submit", function (evt) {
     if (!dateArrival.value || !dateDeparture.value || !bookingAdults.value || !bookingKids.value) {
         evt.preventDefault();
+        popup.classList.remove("form-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("form-error");
         if (!dateArrival.value) {
             dateArrival.classList.add("input-error");
         }
@@ -78,9 +77,9 @@ popup.addEventListener("submit", function (evt) {
         dateDeparture.classList.remove("input-error");
         bookingAdults.classList.remove("input-error");
         bookingKids.classList.remove("input-error");
+        popup.classList.remove("form-error");
     }
 });
-
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
@@ -89,6 +88,3 @@ window.addEventListener("keydown", function (evt) {
         }
     }
 });
-
-imageMap.classList.add("image-map-hide");
-iframeMap.classList.remove("iframe-map-hide");
